@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__informacoes">
+            <h1>Decodificador de Texto</h1>
+
+            <p class="texto__paragrafo">Insira o texto para codificar ou decodificar:</p>
+            <textarea id="texto" class="container__input" rows="4"></textarea>
+
+            <p class="texto__paragrafo">Insira a chave (um número):</p>
+            <input type="number" id="chave" class="container__input">
+
+            <div class="container__botoes">
+                <button class="container__botao" onclick="codificar()">Codificar</button>
+                <button class="container__botao" onclick="decodificar()">Decodificar</button>
+            </div>
+
+            <h2 class="container__texto container__texto-azul">Resultado:</h2>
+            <p id="resultado" class="texto__paragrafo"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
